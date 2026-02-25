@@ -1,33 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap');
+/* edu TAS font */
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+/* Sometype Mono font */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .header-container {
     text-align: center;
     position: relative;
     background-image: url(/img/wall.png);
-    min-height: 60px;
-    padding-top: 10px;
+    padding: 3rem;
+
 }
+
+h1 {
+    font-size: 6rem;
+    margin: 0;
+    font-family:'Edu Tas Beginner','sans-serif';
+    font-weight: 800; 
+    }
 
 .main-bg {
-   background-image: url(/img/cork.png);
-   min-height: 500px;
+    background-image: url(/img/cork.png);
+    background-size: cover;
+    min-height: 100vh;
 }
 
-.card{
+.card {
     margin-top: 2rem;
+    border-radius: 0%;
 }
 
 .title {
     margin-left: 1rem;
-    margin-top: 1rem;
+    font-family:'Sometype Mono', 'monospace'
 
-   
+
 }
 
- .text{
-        margin-left: 1rem
-    }
+.date {
+    margin-left: 1rem
+}
 
 .card-img {
     max-width: 600px;
     max-height: 600px;
-    padding-left: 4rem;
+
+    padding: 20px;
+}
+
+
+.pin {
+
+    position: absolute;
+    top: 0,;
+    left: 50%;
+    translate: -50% -50%
+}
+
+@media (max-width: 768px) {
+        h1 {
+            font-size:4rem;
+        }
+
 }
