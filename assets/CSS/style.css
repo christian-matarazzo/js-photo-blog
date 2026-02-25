@@ -1,0 +1,33 @@
+.header-container {
+    text-align: center;
+    position: relative;
+    background-image: url(/img/wall.png);
+    min-height: 60px;
+    padding-top: 10px;
+}
+
+.main-bg {
+   background-image: url(/img/cork.png);
+   min-height: 500px;
+}
+
+.card{
+    margin-top: 2rem;
+}
+
+.title {
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+   
+}
+
+ .text{
+        margin-left: 1rem
+    }
+
+.card-img {
+    max-width: 600px;
+    max-height: 600px;
+    padding-left: 4rem;
+}
