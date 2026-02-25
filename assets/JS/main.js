@@ -6,9 +6,6 @@
                         <div class="body-card">
                             <h3 class="title">Title</h3>
                             <p class ="date">Data</p>
-                            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat dolorum
-                                alias distinctio qui, quo vitae ea debitis quae magni tenetur aspernatur obcaecati eaque
-                                odit aliquid quos, error delectus quidem. Quo.</p>
                         </div>
                     </div>
                 </div> 
@@ -41,8 +38,9 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
                             <img src="${url}" class="images img-fluid img-top" alt="">
                         </div>
                         <div class="body-card">
-                            <h3 class="title">${title}</h3>
+                        
                             <p class ="date">${date}</p>
+                            <h3 class="title">${title.toUpperCase()}</h3>
                         </div>
                     </div>
                 </div> `
