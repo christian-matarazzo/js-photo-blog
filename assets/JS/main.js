@@ -56,6 +56,7 @@ with innerHTML += only
 
         boardEl.innerHTML += boardPicture
  */
+
 //with createElement
         const colEl = document.createElement('div');
         colEl.className = "col-sm-12 col-md-6 col-lg-4";
@@ -64,7 +65,7 @@ with innerHTML += only
         const cardEl = document.createElement('div')
         cardEl.className = "card";
 
-        cardEl.innerHTML = `<div class="card-img"">
+        cardEl.innerHTML = `<div class="card-img">
                             <img src="./img/pin.svg" id="pin" class="pin" alt="">
                             <img src="${url}" class="images img-fluid img-top" alt="">
                         </div>
