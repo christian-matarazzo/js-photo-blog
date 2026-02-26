@@ -20,6 +20,12 @@
 //get dom
 
 const boardEl = document.getElementById('board')
+const overlayEl = document.getElementById("overlay")
+const overlayContEl = document.getElementById("overlay-content")
+const overlayImgEl = document.getElementById("overlay-img")
+const closeButtonEl = document.getElementById("close-btn")
+
+
 
 //api call (bzzzbzzbbzz)
 fetch("https://lanciweb.github.io/demo/api/pictures/")
@@ -33,7 +39,7 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
     
        const boardPicture =  `<div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <div class="card-img">
+                        <div class="card-img" onclick="zoomImg('${url}')">
                             <img src="./img/pin.svg" id="pin" class="pin" alt="">
                             <img src="${url}" class="images img-fluid img-top" alt="">
                         </div>
@@ -48,13 +54,29 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
         boardEl.innerHTML += boardPicture
 
         
+        
+    })
+    
+    
+})    
+
+
+
+function zoomImg(url) {
+    document.getElementById('overlay-img').src = url;
+    document.getElementById('overlay').classList.remove('d-none')  
+
+    
+}
+
+ 
+    closeButtonEl.addEventListener('click', function () {
+
+        overlayEl.classList.add('d-none')
+
     })
 
 
 
-}
 
 
-
-
-)
